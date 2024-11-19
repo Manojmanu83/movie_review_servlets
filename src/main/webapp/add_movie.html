@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 200px;
+        }
+        fieldset{
+            background-color: darkorchid;
+        }
+        fieldset div{
+            padding: 10px;
+        }
+        fieldset h1{
+            text-align: center;
+        }
+        #name{
+            width: 250px;
+        }
+        #submit{
+            text-align: center;
+        }
+        #submit input{
+           background-color: rgb(88, 88, 217);
+           width: 120px;
+           font-size: 20px;
+           padding: 4px;
+           border: none;
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="add_movie" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <h1>ADD MOVIES</h1>
+            <legend>ADD MOVIES</legend>
+            <div>
+                <input id="name" type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div>
+                 <textarea name="description" id="" cols="32" rows="4" placeholder="Enter description"></textarea>
+            </div>
+            <div>
+                <input type="file" name="poster">
+            </div>
+            <div>
+                <input type="checkbox" name="language" value="Kannada" placeholder="Language">Kannada
+                <input type="checkbox" name="language" value="English" placeholder="Language">English
+                <input type="checkbox" name="language" value="Tamil" placeholder="Language">Tamil
+            </div>
+            <div>
+                <input type="number" name="rating" placeholder="Provide Rating">
+            </div>
+            <div id="submit">
+                <button>Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
